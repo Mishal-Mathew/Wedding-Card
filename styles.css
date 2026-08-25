@@ -10,8 +10,9 @@
 
 body{
 font-family: 'Qerginas Frenchstyle Script', sans-serif;
-font-size: clamp(1rem, 5.5vw, 5rem);
-margin: top 1000px;
+font-size: clamp(1rem, 3vw, 5rem);
+margin-top: 15px;
+background-color:#4d2179;
 }
 
 .intro{
@@ -35,7 +36,6 @@ section{
     position: relative;
     width: 100vm;
     height: 100svh;
-    background-color:#edeaf0;
     color: #170330;
     overflow: hidden;
 }
