@@ -5,15 +5,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #efe8f7;
 }
 
 body{
     font-family: 'Qerginas Frenchstyle Script', sans-serif;
     margin-top: 20px;
     font-size: 3vw;
-    @media (max-width: 700px) {
-    font-size: 5vw;
-}
+    @media (max-width: 700px){
+        font-size: 5vw;
+    }
 }
 
 .intro{
@@ -37,7 +38,6 @@ section{
     position: relative;
     width: 100vm;
     height: 100svh;
-
     color: #170330;
     overflow: hidden;
 }
