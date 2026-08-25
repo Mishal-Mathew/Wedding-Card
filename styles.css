@@ -1,0 +1,41 @@
+@import url('https://fonts.cdnfonts.com/css/qerginas-frenchstyle-script');
+@import url('https://fonts.cdnfonts.com/css/quentty');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+font-family: 'Qerginas Frenchstyle Script', sans-serif;
+font-size: clamp(1rem, 5.5vw, 5rem);
+margin: top 1000px;
+}
+
+.intro{
+    h3{
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    h1{
+        font-family: 'Quentty', sans-serif;
+        letter-spacing: 0.1cap;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+section{
+    position: relative;
+    width: 100vm;
+    height: 100svh;
+    background-color:#edeaf0;
+    color: #170330;
+    overflow: hidden;
+}
