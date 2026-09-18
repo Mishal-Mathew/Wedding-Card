@@ -5,15 +5,14 @@ window.addEventListener("load", () => {
         .timeline({
             scrollTrigger: {
                 trigger: ".wrapper",
-                start: 0,
-                end: "+=250%",
+                start: "top top",
+                end: "+=350%",
                 pin: true,
                 scrub: true
             }
         })
-        .to("img",{
+        .to("#arch",{
             scale:4,
-            z:350,
             transformOrigin:"center center",
             ease:"power1.inOut",
             opacity:0

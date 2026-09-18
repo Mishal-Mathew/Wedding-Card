@@ -19,7 +19,7 @@
 
 section{
     width: 100%;
-    height: 100svh;
+    height: 100vh;
     position: relative;
 }
 
@@ -28,24 +28,32 @@ section{
     background-position: center center;
     background-repeat: no-repeat;
     background-size:clamp(100px,50vw,500px);
-    opacity:83%;
+    opacity:85%;
 }
 
 .image-container{
     position: absolute;
     top:0px;
     width:100%;
-    height: 100svh;
+    height: 100vh;
     z-index: 2;
     left:-10px;
 }
 
 .image-container img {
     width: 100%;
-    height: 100svh;
+    height: 100vh;
     object-fit: contain;
     object-position: center;
     display: block;
     margin: auto;
     scale:1.11;
+}
+
+.section-title1{
+    position: relative;
+    font-family: 'Quentty';
+    left: 1vh;    
+    top:10vh;
+    font-size:6vh;
 }
