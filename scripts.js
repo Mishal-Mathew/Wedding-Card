@@ -1,26 +1,30 @@
 gsap.registerPlugin(ScrollTrigger);
 
 window.addEventListener("load", () => {
-    gsap
-        .timeline({
+    gsap.timeline({
             scrollTrigger: {
-                trigger: ".wrapper",
+                trigger: ".first",
                 start: "top top",
-                end: "+=350%",
+                end: "+=450%",
                 pin: true,
                 scrub: true
             }
         })
-        .to("#arch",{
-            scale:4,
-            transformOrigin:"center center",
-            ease:"power1.inOut",
-            opacity:0
+        .to(".foreground",{
+            scale:3,
+            opacity:0,
+            ease:"power1.in",
         })
-        .to(".section.hero",{
-            scale:2,
-            transformOrigin:"center center",
-            ease:"power1.inOut",
-            opacity:1
-        },"<");
-});
+        .to(".background",{
+            scale:2.4,
+            borderBottomLeftRadius:"15%",
+            borderBottomRightRadius:"15%",
+            bottom:"50px",
+            left:'10px',
+            ease:"power1.in",
+        },'<')
+        .to(".names",{
+            opacity:1,
+            ease:"power1.Out"
+        });
+    });

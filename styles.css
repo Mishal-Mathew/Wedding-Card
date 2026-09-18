@@ -1,59 +1,75 @@
 @import url('https://fonts.cdnfonts.com/css/qerginas-frenchstyle-script');
 @import url('https://fonts.cdnfonts.com/css/quentty');
-
 *{
-    margin: 0;
-    padding: 0;
+    margin:0;
+    padding: 0px;
     box-sizing: border-box;
 }
 
-.wrapper, .content , .image-container{
-    position: relative;
-    width: 100%;
-    z-index: 1;   
-}
-
-.content{
-    overflow-x: hidden;
-}
-
 section{
-    width: 100%;
-    height: 100vh;
-    position: relative;
+    overflow: hidden;
+    height: 100svh;
+    background-image: url("assets/back.png");
+    background-blend-mode: lighten;
+    background-color: rgba(255, 255, 255, 0.4);
 }
 
-.section.hero{
-    background-image:url("assets/WhatsApp Image 2026-08-28 at 2.41.46 PM.png");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size:clamp(100px,50vw,500px);
-    opacity:85%;
-}
-
-.image-container{
-    position: absolute;
-    top:0px;
-    width:100%;
-    height: 100vh;
+#arch{
+    @media screen and (max-width:450px) {
+        width: 120vw;
+    }
+    position:relative;
+    top:10vw;
+    opacity: 85%;
+    left:-50px;
     z-index: 2;
-    left:-10px;
 }
 
-.image-container img {
-    width: 100%;
-    height: 100vh;
-    object-fit: contain;
-    object-position: center;
-    display: block;
-    margin: auto;
-    scale:1.11;
-}
-
-.section-title1{
+.foreground{
     position: relative;
-    font-family: 'Quentty';
-    left: 1vh;    
-    top:10vh;
-    font-size:6vh;
+    z-index: 100;
 }
+.names{
+    position: relative;
+    opacity: 0;
+    width: 40vw;
+    bottom: 15%;
+    right:2.5%;
+    font-size: 2.2cap;
+    font-family:'Quentty' ;
+    display: flex;
+    justify-content:center;
+}
+
+.title{
+    translate:0px 2vh;
+    display: flex;
+    justify-content: center;
+    font-size: 5vh;
+    font-family: "Qerginas Frenchstyle Script";
+    white-space: pre-wrap;
+    line-height:2.8cap;
+}
+
+#flowers{
+    position: relative;
+    width: 25vw;
+    transform:translate(32vw,-5vh) rotate(270deg);
+    opacity: 70%;
+}
+
+.background{
+    position:relative;
+    translate: 36vw -67vh;
+    opacity: 85%;
+    width: 200px;
+    height: 200px;
+    scale:1.6;
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 60%;
+    z-index: 1;
+    background-image: url("assets/WhatsApp Image 2026-08-28 at 2.41.46 PM.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
