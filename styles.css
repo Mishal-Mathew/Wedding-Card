@@ -7,6 +7,7 @@
 }
 
 section{
+<<<<<<< HEAD
     overflow: hidden;
     height: 100svh;
     background-image: url("assets/back.png");
@@ -22,9 +23,30 @@ section{
     top:10vw;
     opacity: 85%;
     left:-50px;
+=======
+    width: 100%;
+    height: 100svh;
+    position: relative;
+}
+
+.section.hero{
+    background-image:url("assets/WhatsApp Image 2026-08-28 at 2.41.46 PM.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:clamp(100px,50vw,500px);
+    opacity:83%;
+}
+
+.image-container{
+    position: absolute;
+    top:0px;
+    width:100%;
+    height: 100svh;
+>>>>>>> parent of eda4345 (Changed structure)
     z-index: 2;
 }
 
+<<<<<<< HEAD
 .foreground{
     position: relative;
     z-index: 100;
@@ -73,3 +95,14 @@ section{
     background-repeat: no-repeat;
 }
 
+=======
+.image-container img {
+    width: 100%;
+    height: 100svh;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    margin: auto;
+    scale:1.11;
+}
+>>>>>>> parent of eda4345 (Changed structure)
