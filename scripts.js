@@ -12,15 +12,14 @@ window.addEventListener("load", () => {
         })
         .to(".foreground",{
             scale:3,
+            bottom:'0vh',
             opacity:0,
             ease:"power1.in",
         })
         .to(".background",{
-            scale:2.4,
+            scale:1.9,
             borderBottomLeftRadius:"15%",
             borderBottomRightRadius:"15%",
-            bottom:"50px",
-            left:'10px',
             ease:"power1.in",
         },'<')
         .to(".names",{
