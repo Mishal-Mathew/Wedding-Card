@@ -1,6 +1,9 @@
 gsap.registerPlugin(ScrollTrigger);
 
+const audio = document.getElementById("music");
+audio.volume = 0.7;
 window.addEventListener("load", () => {
+
     gsap.timeline({
             scrollTrigger: {
                 trigger: ".first",
@@ -18,6 +21,7 @@ window.addEventListener("load", () => {
         })
         .to(".background",{
             scale:1.9,
+            
             borderBottomLeftRadius:"15%",
             borderBottomRightRadius:"15%",
             ease:"power1.in",
@@ -26,4 +30,33 @@ window.addEventListener("load", () => {
             opacity:1,
             ease:"power1.Out"
         });
-    });
+        
+        
+    gsap.timeline({
+            scrollTrigger: {
+                trigger: ".second",
+                start: "top top",
+                end: "+=150%",
+                pin:true,
+                scrub: true
+            }
+        })
+        .to(".second",{
+            opacity:1,
+            ease:"power1.Out"
+        });
+    
+    gsap.timeline({
+            scrollTrigger: {
+                trigger: ".three",
+                start: "top top",
+                end: "+=150%",
+                scrub: true,
+                pin:true
+            }
+        })
+        .to(".three",{
+            opacity:1,
+            ease:"power1.Out"
+        })
+});
