@@ -1,7 +1,5 @@
 gsap.registerPlugin(ScrollTrigger);
 
-const audio = document.getElementById("music");
-audio.volume = 0.7;
 window.addEventListener("load", () => {
 
     gsap.timeline({
